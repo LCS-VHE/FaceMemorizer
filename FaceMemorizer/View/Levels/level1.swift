@@ -44,11 +44,11 @@ struct level1View: View {
                             
                             if guessIndex[num] == guessIndex[correctIndex]
                             {
-                                Button(action: pressedCorrectButton(userSelectedIndex: guessIndex[num], actualIndex: guessIndex[correctIndex]), label: {allData.keycardSets[0].images[guessIndex[num]]})
+                                Button(action: pressedCorrectButton(userSelectedIndex: guessIndex[num], actualIndex: guessIndex[correctIndex]), label: {allData.keycardSets[0].images[guessIndex[num]].resizable().scaledToFit()})
                             }
                             else
                             {
-                                Button(action: pressedIncorrectButton(userSelectedIndex: guessIndex[num], actualIndex: guessIndex[correctIndex]), label: {allData.keycardSets[0].images[guessIndex[num]]})
+                                Button(action: pressedIncorrectButton(userSelectedIndex: guessIndex[num], actualIndex: guessIndex[correctIndex]), label: {allData.keycardSets[0].images[guessIndex[num]].resizable().scaledToFit()})
                             }
                         }
                     }
